@@ -1,4 +1,7 @@
 :root {
+    --lightmode: #000000;
+    --darkmode: #ffffff;
+
     --lightmode-background: #ffffff;
     --darkmode-background: #0f0f0f;
 }
@@ -10,7 +13,11 @@
     }
 
     .pagelogo-color {
-        fill: #000000;
+        fill: var(--lightmode);
+    }
+
+    .var-color {
+        color: var(--lightmode);
     }
 }
 
@@ -21,7 +28,11 @@
     }
 
     .pagelogo-color {
-        fill: #ffffff;
+        fill: var(--darkmode);
+    }
+
+    .var-color {
+        color: var(--darkmode);
     }
 }
 
@@ -52,6 +63,15 @@
     border-radius: 50px;
 }
 
-.textbox:focus {
+.textinput {
+    margin: 0 18px 0 18px;
+    width: 90%;
+    height: 100%;
+
+    background: none;
+    border: none;
+}
+
+.textinput:focus {
     outline: none;
 }
