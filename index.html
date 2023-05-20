@@ -60,8 +60,11 @@
 
         <!-- Input Textbox -->
         <div class="textbox">
-            <input class="textinput var-color fsize20 fweight300" type="text" id="search" placeholder="검색">
-            <a title="검색하기" onclick="gosearch();">
+            <input class="textinput var-color fsize20 fweight300"
+                   type="text" id="search" placeholder="검색"
+                   onkeypress="return enterSearch(event)">
+
+            <a title="검색하기" onclick="goSearch();">
                 <div class="search-iconbox">
                     <svg class="search-icon pagelogo-color" viewBox="-10 -3 100 100" focusable="false">
                         <path
