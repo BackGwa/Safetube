@@ -1,0 +1,57 @@
+:root {
+    --lightmode-background: #ffffff;
+    --darkmode-background: #0f0f0f;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: var(--lightmode-background);
+        margin: 0;
+    }
+
+    .pagelogo-color {
+        fill: #000000;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--darkmode-background);
+        margin: 0;
+    }
+
+    .pagelogo-color {
+        fill: #ffffff;
+    }
+}
+
+.search-bar {
+    position: absolute;
+    display: grid;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.pagelogo {
+    display: flex;
+    justify-self: center;
+    width: 320px;
+
+    margin-bottom: 32px;
+}
+
+.textbox {
+    width: 720px;
+    height: 48px;
+
+    background: #121212;
+
+    border: 1px solid #222222;
+    border-radius: 50px;
+}
+
+.textbox:focus {
+    outline: none;
+}
