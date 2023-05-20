@@ -4,8 +4,7 @@
     "description": "유튜브 메인화면의 알고리즘에 대한 노출을 줄여줍니다.",
     "version": "0.1",
     "permissions": [
-        "webNavigation",
-        "scripting"
+        "webNavigation"
     ],
     "background": {
         "service_worker": "index.js"
